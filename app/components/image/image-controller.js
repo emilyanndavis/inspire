@@ -1,5 +1,10 @@
 (function(){
-	
-	//Your ImageService is a global constructor function what can you do here if you new it up?
+	console.log('ready');
+	var imageService = new ImageService();
+	imageService.getImage(function(image){
+		console.log(image.url);
+		$('#wallpaper').css(`background-image`, `url(${image.url})`);
+		$('#wallpaper').css(`background-size`, `cover`);		
+	});
 	
 }())

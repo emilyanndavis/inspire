@@ -2,28 +2,47 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="body">
-	<div id="weather">
+<body id="wallpaper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
+				<div id="weather" class="weather-box">
 
-	</div>
+				</div>
+			</div>
+			<div class="clearfix visible-xs-block"></div>
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-offset-1">
+				<div id="todo" class="todo-box">
+					<h3>Todo List</h3>
+					<form>
+						<input type="text" name="item" />
+						<button type="submit" class="btn btn-success">Add to List</button>
+					</form>
+					<div id="list-display">
 
-	<div id="quote">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+				<div id="quote" class="quote-box">
 
-	</div>
-
-	<div id="todo">
-
+				</div>
+			</div>
+		</div>
 	</div>
 
 
 
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="app/init.js"></script>
 	<script src="app/components/weather/weather-service.js"></script>
 	<script src="app/components/image/image-service.js"></script>
 	<script src="app/components/quote/quote-service.js"></script>
