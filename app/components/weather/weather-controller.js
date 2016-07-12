@@ -4,6 +4,7 @@
 	var weatherService = new WeatherService();
 	
 	weatherService.getWeather(function(weather){
+		weather = JSON.parse(weather);
 		var weatherElem = $('#weather');
 
 		var location = weather.name;
