@@ -1,5 +1,4 @@
 (function(){
-	console.log('ready');
 	var imageService = new ImageService();
 	imageService.getImage(function(image){
 		image = JSON.parse(image);
