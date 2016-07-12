@@ -8,7 +8,7 @@
 	$('#todo form').on('submit', function(event){
 		event.preventDefault();
 		var form = this;
-		var item = this.item.value;
+		var item = form.item.value;
 		// add to todoList array
 		todoList.push(item);
 		todoService.saveTodos(todoList);
