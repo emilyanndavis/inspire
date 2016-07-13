@@ -23,7 +23,10 @@
 		todoList.splice(index, 1);
 		todoService.saveTodos(todoList);
 		// remove from display
-		update();
+		$(this).addClass('animated hinge');
+		setTimeout(function(){
+			update();
+		}, 2000);
 	});
 
 	function update() {
